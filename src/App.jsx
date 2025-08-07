@@ -1,9 +1,14 @@
 import { useState } from "react";
 import Card from "./component/Card";
+import Data from "../data.json";
+
+const data = Data.data;
 function App() {
   return (
     <>
-      <h1>hii</h1>
+      {data.map((dt) => (
+        <Card key={dt.key} title={dt.title} skills={dt.skills} />
+      ))}
     </>
   );
 }
