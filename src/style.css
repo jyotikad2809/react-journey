@@ -19,3 +19,10 @@
   gap: 8px;
   flex-wrap: wrap;
 }
+.skill-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.skill-title {
+  font-weight: bold;
+}
