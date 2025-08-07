@@ -1,6 +1,5 @@
 import React from "react";
 import backgroundImage from "../assets/ai-journey-bg.svg";
-import logo from "../assets/logo.svg";
 
 //add one typescript for one demo purpose
 //other code base is in javascript
@@ -9,7 +8,7 @@ const BackgroundComponent = ({ children }: { children: React.ReactNode }) => {
   const styles = {
     container: {
       backgroundImage: `url(${backgroundImage})`,
-      height: "100vh",
+      minHeight: "100%",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -17,24 +16,9 @@ const BackgroundComponent = ({ children }: { children: React.ReactNode }) => {
       paddingLeft: "200px",
       paddingRight: "200px",
     },
-    titleLogo: {
-      backgroundImage: `url(${logo})`,
-      position: "absolute",
-      top: 50,
-      left: 50,
-      width: "96px",
-      height: "96px",
-      backgroundSize: "contain",
-      backgroundRepeat: "no-repeat",
-    },
   };
 
-  return (
-    <div style={styles.container}>
-      <div style={styles.titleLogo} />
-      {children}
-    </div>
-  );
+  return <div style={styles.container}>{children}</div>;
 };
 
 export default BackgroundComponent;

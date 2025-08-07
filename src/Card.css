@@ -1,0 +1,40 @@
+.timeline-card {
+  width: 45%; /* Adjust as needed */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1; /* Ensure cards are above the line */
+}
+
+.timeline-card.left {
+  align-self: flex-start;
+  margin-right: 55%; /* Adjust to make room for the line */
+}
+
+.timeline-card.right {
+  align-self: flex-end;
+  margin-left: 55%; /* Adjust to make room for the line */
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 4px solid #333;
+  border-radius: 50%;
+  z-index: 2; /* Ensure the circle is on top */
+}
+
+.timeline-card.left::before {
+  right: -50px; /* Position on the left side of the line */
+}
+
+.timeline-card.right::before {
+  left: -50px; /* Position on the right side of the line */
+}
