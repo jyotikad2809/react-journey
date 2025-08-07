@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "Data Science", "Machine Learning"],
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "Deep Learning", "TensorFlow", "Keras"],
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "NLP", "Computer Vision", "OpenCV"],
+      "status": "current"
+    },
+    {
+      "id": 4,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "Data Visualization", "Matplotlib", "Seaborn"],
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "Neural Networks", "Reinforcement Learning"],
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "title": "Python Engineering with A.I, DL and ML for Beginners",
+      "skills": ["Python", "Big Data", "PySpark", "Hadoop"],
+      "status": "pending"
+    }
+  ]
+}
