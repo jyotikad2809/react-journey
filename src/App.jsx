@@ -1,5 +1,5 @@
-import Card from "./component/Card";
 import Data from "../data.json";
+import Timeline from "./component/Timeline";
 import BackgroundComponent from "./component/Background";
 import logo from "./assets/logo.svg";
 import "./app.css";
@@ -20,9 +20,7 @@ function Container() {
   );
 }
 function Content() {
-  return data.map((dt) => (
-    <Card key={dt.key} title={dt.title} skills={dt.skills} />
-  ));
+  return <Timeline items={data}></Timeline>;
 }
 
 function Title() {
