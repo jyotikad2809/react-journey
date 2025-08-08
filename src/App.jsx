@@ -5,6 +5,7 @@ import logo from "./assets/logo.svg";
 import "./app.css";
 
 const data = Data.data;
+
 function App() {
   return <Container></Container>;
 }
@@ -14,11 +15,12 @@ function Container() {
     <div className="content-boundary">
       <BackgroundComponent>
         <Title></Title>
-        <Content></Content>
+        <Content className="content-class"></Content>
       </BackgroundComponent>
     </div>
   );
 }
+
 function Content() {
   return <Timeline items={data}></Timeline>;
 }
@@ -26,23 +28,19 @@ function Content() {
 function Title() {
   const styles = {
     container: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "flex-start",
-      padding: "10px",
+      zIndex: 10,
     },
     logo: {
-      width: "48px",
-      height: "48px",
-      marginRight: "10px",
-      alignSelf: "flex-start",
+      width: "150px",
+      height: "120px",
     },
   };
 
   return (
-    <div className="title-container">
-      <img src={logo} alt="Logo" className="title-logo" />
+    <div style={styles.container}>
+      <img src={logo} alt="Logo" style={styles.logo} />
     </div>
   );
 }
+
 export default App;
