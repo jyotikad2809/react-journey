@@ -13,7 +13,7 @@ const Timeline = ({ items }) => {
     bottom: 0,
     left: "50%",
     width: "4px",
-    backgroundColor: "royalblue", // was #2563eb
+    backgroundColor: "royalblue",
     transform: "translateX(-50%)",
     zIndex: 0,
   };
@@ -42,7 +42,7 @@ const Timeline = ({ items }) => {
   const connector = (isLeft) => ({
     width: "60px",
     height: "2px",
-    backgroundColor: "royalblue", // was #2563eb
+    backgroundColor: "royalblue",
     position: "absolute",
     ...(isLeft ? { left: "6px" } : { right: "6px" }),
   });
@@ -50,7 +50,7 @@ const Timeline = ({ items }) => {
   const dotStyle = {
     width: "12px",
     height: "12px",
-    backgroundColor: "royalblue", // was #2563eb
+    backgroundColor: "royalblue",
     borderRadius: "50%",
     position: "absolute",
     left: "50%",
