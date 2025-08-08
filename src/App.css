@@ -1,13 +1,4 @@
 .content-boundary {
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title-container {
-  align-self: flex-start;
-}
-
-.title-logo {
-  margin-right: 10px;
-  align-self: flex-start;
+  margin: 0 auto;
 }
